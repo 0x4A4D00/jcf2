@@ -93,7 +93,9 @@ begin
       end;
 
       InsertTokenBefore(lcSourceToken, lcNew);
-
+      
+      lcSourceToken.SourceCode := lcSourceToken.SourceCode + ' '; // Add Space After Colon 
+      
       Result := True;
     end;
 
